@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "MIN201 Staff Directory Search",
+  "description": "MIN201 Staff Directory Search",
+  "author": "Pamela Wolfe & David Plaskett",
+  "version": "5.3",
+  "icons": {
+  	"128": "min_logo_sans.png"
+  },
+ 
+  "browser_action": {
+   "default_icon": "min_logo_sans.png",
+   "default_popup": "index.html"
+  },
+
+  "permissions": [
+  	"activeTab"
+  ]
+  
+}

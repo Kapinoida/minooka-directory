@@ -1,0 +1,84 @@
+<!--
+
+	This is the page that will render as your extension when the user clicks on the icon.
+	Be sure to download the JQueryUI and JQuery files and loaded into your folder.
+
+	This is the document that is tied to the manifest.json file so if you change the title
+	of this file, you have to change it in the manifest.json file also otherwise it will not work.
+
+	Please refer to the site below for detailed documentation about building, testing and publishing
+	Chrome extensions.
+	https://developer.chrome.com/extensions/getstarted
+
+
+-->
+
+<!doctype html>
+
+<html>
+	<head>
+		<title>MIN201 Teacher Extension</title>
+		<meta name="author" content="Pamela Wolfe & David Plaskett" />
+		<meta name="version" content="5.0" />
+		
+		<link href="jqueryui.css" type="text/css" rel='stylesheet'/>
+		<link href="stylesheet.css" type="text/css" rel='stylesheet'/>
+		<script src="jquery.js"></script>
+		<script src="jqueryui.js"></script>
+		<script src="ajax.js"></script>
+	</head>
+
+	<body>
+		<div id="header">
+			<a href="https://www.min201.org/faculty-and-staff/staff-links" target="_blank"><img src="min_logo.png" /></a>
+		</div>
+		<div id="tabs">
+			<ul>
+				<li class='tab' id='tab-1-button'><a href="#tab-1">Directory</a></li>
+				<li class='tab' id='tab-2-button'><a href="#tab-2">Email Groups</a></li>
+				<li class='tab'><a href="#tab-3">Quick Links</a></li>
+			</ul>
+
+			<!-- This is the directory search tab -->
+			<div id="tab-1">
+				<div class='searcharea'>
+					<input type='search' name='search-dir' id='search-dir' placeholder='Name | Ext# '/>
+				</div>
+	
+				<div id='update-dir'></div>
+			</div>
+
+			<!-- This is the Email Group search tab -->
+			<div id="tab-2">
+
+				<div class='searcharea'>
+					<input type='submit' id='email-group-button' value='Email Group'>
+					<input type='submit' id='ind-button' value='Individual'>
+					<input type='search' name='search-email' id='search-email' placeholder='Group Name '/>
+					<input type='search' name='search-ind' id='search-ind' placeholder='Name ' style='display: none'/>
+				</div>
+
+				<div id='update-email'></div>
+			</div>
+
+			<div id="tab-3">
+				<ul id="ql-list">
+					<li><a class='ql' href="https://docs.google.com/document/d/1SU-HYy_BBg2-dJpYXJDmQ9a1Hu5gnZyc49HKNYKxiqo/edit?usp=sharing" target="_blank">Chrome Remote Desktop</a></li class>
+					<li><a class='ql' href="https://classroom.powerschool.com" target="_blank">PowerSchool</a></li class>
+					<li><a class='ql' href="https://links.min201.org" target="_blank">Student Links</a></li>
+					<li><a class='ql' href="https://lunch.min201.org" target="_blank">Lunch Count</a></li>
+					<li><a class='ql' href="https://sso.mapnwea.org/auth/login?dest=https%3A%2F%2Fteach.mapnwea.org%2Fadmin%2F" target="_blank">NWEA MAP</a></li>
+					<li><a class='ql' href="https://min201.org" target="_blank">District Homepage</a></li>
+					<li><a class='ql' href="https://minooka.eschoolsolutions.com/logOnInitAction.do" target="_blank">Sub Finder</a></li>
+				</ul>
+			</div>
+
+		</div>
+	
+	
+<!-- 	Below are the scripts that will load after the page has rendered.
+			They are the scrips that are pulling data from your spreadsheets. 	-->
+		
+			
+	</body> 
+</html>

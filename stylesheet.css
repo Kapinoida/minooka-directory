@@ -1,0 +1,171 @@
+body {
+	height: 500px;
+	width: 400px;
+}
+
+#header {
+	text-align: center;
+	width: 99%;
+	margin-bottom: 5px;
+	padding: 2px;
+}
+
+#header img {
+	width: 125px;
+}
+
+#tabs { 
+	background: transparent; 
+	border: none; 
+	padding: 0;
+} 
+
+#tabs .ui-widget-header { 
+	background: transparent; 
+	border: none; 
+	border-bottom: 1px solid #c0c0c0; 
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; 
+	border-radius: 0px; 
+} 
+
+#tabs .ui-tabs-nav .ui-state-default { 
+	background: transparent; 
+	border: none; 
+} 
+
+#tabs .ui-tabs-nav .ui-state-active { 
+	background: transparent url(uiTabsArrow.png) no-repeat bottom center; 
+	border: none; 
+}
+
+.ui-widget * {
+	outline: none;
+}​
+
+#tabs .ui-tabs-nav .ui-state-default a:hover { 
+	color: #00357a; 
+} 
+
+#tabs .ui-tabs-nav .ui-state-active a { 
+	color: #00357a; 
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-widget-content a {
+	color: #c0c0c0;
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #c0c0c0;
+}
+
+.group-email {
+	color: #00357a !important;
+	text-decoration: none;
+	padding: 0;
+}
+
+.searcharea {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0;
+}
+
+input[type=submit] {
+	margin: 0 5px;
+	padding: 5px;
+	color: #00357a;
+	background-color: #fff;
+	border: solid 1px #c0c0c0;
+	cursor: pointer;
+}
+
+.button-area input:hover,
+.button-area input:focus {
+	background-color: #c0c0c0;
+	cursor: pointer;
+}
+
+input[type=search],
+input[type=search]:focus {
+	margin-left: auto;
+	outline: none;
+	height: 30px;
+	padding: 5px;
+}
+
+#ql-list {
+	text-align: center;
+	list-style-type: none;
+	padding: 5px;
+	color: #c0c0c0;
+}
+
+#ql-list li {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.ql {
+	text-decoration: none;
+	padding: 10px;
+}
+
+.ql:hover {
+	color: #00357a;
+}
+
+.searchresults {
+	margin: auto;
+	padding: 5px 5px 5px 5px;
+	color: #00357a;
+}
+
+hr {
+	border-top: 1px solid #c0c0c0;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #00357a;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+	background-color: #00357a;
+	color: #fff
+}
+
+/* Style the accordion panel. */
+.panel {
+  padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\0002b'; /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  color: #fff;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\0002d"; /* Unicode character for "minus" sign (-) */
+}
